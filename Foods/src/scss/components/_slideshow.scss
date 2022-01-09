@@ -1,0 +1,20 @@
+.slideshow {
+  position: relative;
+
+  &__item {
+    font-size: 35rem;
+    color: #a79a2d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-shadow: 0.2rem 0.2rem 0.2rem $color--black;
+    transition: transform 0.4s;
+    opacity: 0;
+
+    &--active {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}

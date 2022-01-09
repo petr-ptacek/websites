@@ -16,4 +16,43 @@ html {
   font-size: 62.5%;
 }
 
+.section-heading {
+  font-size: 12rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+.slideshow {
+  position: relative;
+}
+.slideshow__item {
+  font-size: 35rem;
+  color: #a79a2d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  transition: transform 0.4s;
+  opacity: 0;
+}
+.slideshow__item--active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.section-variety-of-foods {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=style.css.map */
