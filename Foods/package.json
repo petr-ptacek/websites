@@ -4,7 +4,7 @@
   "scripts": {
     "server": "servor ./public --reload --browse",
     "build:sass": "sass ./src/scss/main.scss ./public/css/style.css -s compressed",
-    "watch:sass": "npm run -- sass:dev --watch",
+    "watch:sass": "npm run -- dev:sass --watch",
     "dev:sass": "sass ./src/scss/main.scss ./public/css/style.css -s expanded",
     "dev": "npm-run-all -p server watch:sass",
     "build": "npm-run-all -p build:sass"
