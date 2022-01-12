@@ -1,0 +1,74 @@
+.card {
+  width: 30rem;
+  background-color: $color--yellow;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem $color--black;
+  position: relative;
+  transform: rotateY(20deg) skewX(-2deg);
+  transition: transform .5s, box-shadow .5s;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #111;
+    margin: 2rem 0;
+    text-shadow: .15rem .15rem .15rem $color--black;
+  }
+
+  &__button {
+    width: 70%;
+    background-color: #111;
+    color: #888;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    border: none;
+    padding: .5rem 0;
+    cursor: pointer;
+    box-shadow: -.2rem -.2rem -.2rem $color--black;
+  }
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    box-shadow: -0.1rem -0.1rem 0.1rem $color--black;
+
+  }
+
+  &::before {
+    height: 100%;
+    width: 1rem;
+    background-color: #817824;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+  }
+
+  &::after {
+    height: 1rem;
+    width: 100%;
+    background-color: #8f8317;
+    top: -1rem;
+    left: 0;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+  }
+
+  &:hover {
+    transform: rotateY(20deg) skewX(-2deg) translateY(-3rem);
+    box-shadow: 2rem 2rem 2rem $color--black;
+  }
+}
